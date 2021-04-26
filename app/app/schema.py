@@ -1,5 +1,6 @@
 import graphene
 import tracks.schema
+import users.schema
 
 class Query(
     tracks.schema.Query,
@@ -8,6 +9,7 @@ class Query(
 
 class Mutation(
     tracks.schema.Mutation,
+    users.schema.Mutation,
     graphene.ObjectType
 ):
     pass
