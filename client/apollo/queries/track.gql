@@ -1,0 +1,14 @@
+query tracks {
+  tracks {
+    title
+    postedBy {
+      id
+      username
+    }
+    likes {
+      user {
+        id
+      }
+    }
+  }
+}
